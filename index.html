@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script defer src="./assets/js/axios.min.js"></script>
+    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script
+      defer
+      src="./assets/js/sweetalert2.all.min.js"
+      charset="utf-8"
+    ></script>
+    <script defer src="./assets/js/script.js"></script>
+
+    <title>Kamus Besar Bahasa Indonesia</title>
+  </head>
+  <body>
+    <!--navbar    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yadev</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#cari"
+                >KBBI</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/donasi.html">DONATIONS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/.nav-->
+
+    <div class="container">
+      <div class="px-4 py-5 my-2 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="./assets/img/kbbi_yad.png"
+          alt=""
+          width="92"
+          height="77"
+        />
+        <h1 class="display-5 fw-bold">Kamus Besar Bahasa Indonesia</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Jangan sampai salah Paham, ketahui arti bahasa indonesia terlebih
+            dahulu disini dan berpikirlah sebelum berbicara
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a
+              href="#cari"
+              type="button"
+              class="btn btn-primary btn-lg px-4 gap-3"
+            >
+              Mulai
+            </a>
+            <button
+              type="button"
+              class="btn btn-outline-info btn-lg px-4 info_btn"
+            >
+              Info
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.container-->
+    <main>
+      <div class="container my-4 col">
+        <div class="row text-center py-2">
+          <h2 class="text-primary" id="cari"># Pencarian Kata</h2>
+        </div>
+        <div class="row">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control search_inp"
+              placeholder="Cari Kata"
+              aria-label="Cari Kata"
+              aria-describedby="search form"
+            />
+            <button class="btn btn-outline-dark search_btn" type="button">
+              Cari
+            </button>
+          </div>
+        </div>
+        <div class="row content_word">
+          <div class="col-md-6 mb-3">
+            <div class="card" style="max-width: auto">
+              <div class="card-body">
+                <button class="btn btn-primary" type="button" disabled>
+                  <span
+                    class="spinner-grow spinner-grow-sm"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                  Menunggu Respon...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--/main-->
+
+    <footer>
+      <p class="text-center">
+        Created By <a href="https://m.facebook.com/triadi.art.9">Yadi</a>
+      </p>
+    </footer>
+  </body>
+</html>
